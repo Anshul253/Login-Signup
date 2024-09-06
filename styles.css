@@ -1,0 +1,131 @@
+body {
+    background-color: #292929;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sign-in-form,.log-in-form {
+    background-color: rgb(54, 53, 53);
+    padding: 35px;
+    padding-right: 70px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .log-in-form,.sign-in-form {
+    background-color: rgb(54, 53, 53);
+	width: 360px;
+  	height: 450px;
+  	align-content: center;
+  	border: 3px solid #9BA4B5;	
+  	margin-top: 35px;
+  	margin-left: 35px;
+  	margin-right: 35px;
+  	transition: 0.2s;
+	overflow: hidden;
+  	
+  	
+}
+
+.log-in-form:before,.sign-in-form:before {
+	content: "";
+	position: absolute;
+	left: -10rem;
+	right: -10rem;
+	top: -10rem;
+	bottom: -10rem;
+	z-index: -2;
+	pointer-events: none;
+  }
+
+  .log-in-form:hover:before,.sign-in-form:hover:before {
+	animation: rotate 2s linear infinite forwards;
+	background: conic-gradient(
+	  #fd004c,
+	  #fe9000,
+	  #fff020,
+	  #3edf4b,
+	  #3363ff,
+	  #b102b7,
+	  #fd004c
+	);
+	
+}
+
+.log-in-form:hover,.sign-in-form:hover {
+	
+	transform: scale(1.05);
+	border-radius: 20px;
+}
+
+.log-in-form:after,.sign-in-form:after {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	background-color: rgb(36, 35, 35);
+	z-index: -2;
+	
+	
+}
+
+@keyframes rotate {
+	100% {
+	  transform: rotate(360deg);
+	}
+}
+  .sign-in-form h2, .log-in-form h2 {
+    color: #ffffff;
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    color:#ffffff
+  }
+  
+  label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-submit {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #countdown {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+  }
